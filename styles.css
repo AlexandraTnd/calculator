@@ -16,6 +16,7 @@ body {
     margin: auto;
     border: 1px solid #a7aba7;
     vertical-align: middle;
+    box-shadow: 3px 3px 3px #888888;
 }
 
 header {
@@ -39,6 +40,7 @@ header {
     padding: 10px;
     font-size: 30px;
     border-radius: 10px;
+    box-shadow: 3px 3px 3px #888888;
 }
 
 button {
@@ -46,6 +48,7 @@ button {
     font-size: 30px;
     flex: 1;
     align-self: stretch;
+    box-shadow: 3px 3px 3px #888888;
 }
 
 
