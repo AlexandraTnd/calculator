@@ -76,6 +76,7 @@ function calculate() {
 };
 
 function calculate2() {
+    if (toCalculate.length !== 0) {
     toCalculate.push(result);
     if (toCalculate.length === 3) {
         switch (toCalculate[1]) {
@@ -89,5 +90,5 @@ function calculate2() {
         result = finalResult;
         toCalculate = [];
         number = [0];
-    };
+    };};
 };

@@ -13,6 +13,8 @@ html {
 
 body {
     width: 50%;
+    min-width: 400px;
+    max-width: 500px;
     margin: auto;
     border: 1px solid #a7aba7;
     vertical-align: middle;
@@ -25,7 +27,7 @@ header {
     background-color: #cdfad1;
     font-size: 30px;
     font-weight: bolder;
-    border-bottom: 5px solid #5cf769;
+    border-bottom: 5px solid #4edd5a;
 }
 
 #container {
