@@ -94,7 +94,14 @@ function calculate2() {
 };
 
 function percent() {
-    let doPercent = result / 100;
+    let doPercent;
+    switch (toCalculate[1]) {
+        case "+": doPercent = toCalculate[0] *  result / 100; break;
+        case "-": doPercent = toCalculate[0] *  result / 100; break;
+        case "/": doPercent = result / 100; break;
+        case "*": doPercent = result / 100; break;
+        default: break;
+    };
     result = 0;
     number = [];
     toCalculate.push(doPercent);
