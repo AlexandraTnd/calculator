@@ -99,5 +99,10 @@ function percent() {
     number = [];
     toCalculate.push(doPercent);
     calculate();
-    console.log(toCalculate);
+};
+
+function squareRoot() {
+    result = Math.sqrt(result);
+    number = [];
+    showResult(result);
 }
