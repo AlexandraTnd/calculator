@@ -94,10 +94,10 @@ function calculate2() {
 };
 
 function percent() {
-    let doPercent = +toCalculate[0] * result / 100;
+    let doPercent = result / 100;
     result = 0;
     number = [];
-    toCalculate.push(+doPercent);
+    toCalculate.push(doPercent);
     calculate();
     console.log(toCalculate);
 }
