@@ -47,7 +47,7 @@ function operation(x) {
         showResult(toCalculate.join(""));
         console.log(toCalculate);
     } else {
-        toCalculate.push(result);
+        if (toCalculate.length % 2 === 0) {toCalculate.push(result);}
         toCalculate.push(x);
         if (toCalculate.length > 3) {
             calculate();
@@ -60,7 +60,7 @@ function operation(x) {
 };
 
 function calculate() {
-    if (toCalculate.length > 3) {
+    if (toCalculate.length >= 3) {
     switch (toCalculate[1]) {
         case "+": finalResult = toCalculate[0] + toCalculate[2]; break;
         case "-": finalResult = toCalculate[0] - toCalculate[2]; break;
@@ -68,8 +68,8 @@ function calculate() {
         case "*": finalResult = toCalculate[0] * toCalculate[2]; break;
         default: break;
     };
-    toCalculate.splice(0, 3);
     toCalculate.unshift(finalResult);
+    toCalculate.splice(1, 3);
     console.log(toCalculate);
     };
     showResult(finalResult);
@@ -92,3 +92,12 @@ function calculate2() {
         number = [0];
     };};
 };
+
+function percent() {
+    let doPercent = +toCalculate[0] * result / 100;
+    result = 0;
+    number = [];
+    toCalculate.push(+doPercent);
+    calculate();
+    console.log(toCalculate);
+}

@@ -77,4 +77,5 @@ button {
 
 button:active {
     background-color: #cdfad1 !important;
+    box-shadow: none;
 }
