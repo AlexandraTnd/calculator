@@ -1,1 +1,1 @@
-[https://alexandratnd.github.io/calculator/](url)
+[alexandratnd.github.io/calculator/](url)
